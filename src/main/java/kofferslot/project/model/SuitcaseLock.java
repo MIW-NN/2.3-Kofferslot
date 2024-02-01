@@ -10,11 +10,9 @@ public class SuitcaseLock {
     private int number;
 
     public SuitcaseLock() {
-        this(DEFAULT_FIRST_CHAR, DEFAULT_SECOND_CHAR, DEFAULT_NUMBER);
     }
 
     public SuitcaseLock(char firstChar, char secondChar, int number) {
-        setCombination(firstChar, secondChar, number);
     }
 
     /**
@@ -26,25 +24,14 @@ public class SuitcaseLock {
      */
 
     public void setCombination(char firstChar, char secondChar, int number) {
-        this.setFirstChar(firstChar);
-        this.setSecondChar(secondChar);
-        this.setNumber(number);
     }
 
     public char nextChar(char letter) {
-        if (letter == 'Z') {
-            return 'A';
-        } else {
-            return ++letter;
-        }
+        return 'A';
     }
 
     public int nextNumber(int cijfer) {
-        if (cijfer == 9) {
-            return 0;
-        } else {
-            return ++cijfer;
-        }
+        return 0;
     }
 
     /**
@@ -54,13 +41,6 @@ public class SuitcaseLock {
      */
 
     public void next() {
-        number = nextNumber(number);
-        if (number == 0) {
-            secondChar = nextChar(secondChar);
-            if (secondChar == 'A') {
-                firstChar = nextChar(firstChar);
-            }
-        }
     }
 
     public char getFirstChar() {
