@@ -10,8 +10,8 @@ public class KofferslotTest {
     public void gegevenCombinatieIsGoedIngesteldEnTeZienViaGetters() {
         var kofferslot = new Kofferslot('A', 'C',5);
 
-        Assert.assertEquals('A', kofferslot.getEersteChar());
-        Assert.assertEquals('C', kofferslot.getTweedeChar());
+        Assert.assertEquals('A', kofferslot.getEersteLetter());
+        Assert.assertEquals('C', kofferslot.getTweedeLetter());
         Assert.assertEquals(5, kofferslot.getCijfer());
     }
 
@@ -21,8 +21,8 @@ public class KofferslotTest {
 
         kofferslot.setCombinatie('B','B', 7);
 
-        Assert.assertEquals('B', kofferslot.getEersteChar());
-        Assert.assertEquals('B', kofferslot.getTweedeChar());
+        Assert.assertEquals('B', kofferslot.getEersteLetter());
+        Assert.assertEquals('B', kofferslot.getTweedeLetter());
         Assert.assertEquals(7, kofferslot.getCijfer());
     }
 
@@ -47,8 +47,8 @@ public class KofferslotTest {
         var kofferslot = new Kofferslot('A', 'C',5);
         kofferslot.volgende();
 
-        Assert.assertEquals('A', kofferslot.getEersteChar());
-        Assert.assertEquals('C', kofferslot.getTweedeChar());
+        Assert.assertEquals('A', kofferslot.getEersteLetter());
+        Assert.assertEquals('C', kofferslot.getTweedeLetter());
         Assert.assertEquals(6, kofferslot.getCijfer());
     }
 
@@ -57,8 +57,8 @@ public class KofferslotTest {
         var kofferslot = new Kofferslot('A', 'C',9);
         kofferslot.volgende();
 
-        Assert.assertEquals('A', kofferslot.getEersteChar());
-        Assert.assertEquals('D', kofferslot.getTweedeChar());
+        Assert.assertEquals('A', kofferslot.getEersteLetter());
+        Assert.assertEquals('D', kofferslot.getTweedeLetter());
         Assert.assertEquals(0, kofferslot.getCijfer());
     }
 
@@ -67,8 +67,8 @@ public class KofferslotTest {
         var kofferslot = new Kofferslot('A', 'Z',9);
         kofferslot.volgende();
 
-        Assert.assertEquals('B', kofferslot.getEersteChar());
-        Assert.assertEquals('A', kofferslot.getTweedeChar());
+        Assert.assertEquals('B', kofferslot.getEersteLetter());
+        Assert.assertEquals('A', kofferslot.getTweedeLetter());
         Assert.assertEquals(0, kofferslot.getCijfer());
     }
 }

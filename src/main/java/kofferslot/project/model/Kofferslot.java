@@ -1,29 +1,29 @@
 package kofferslot.project.model;
 
 public class Kofferslot {
-    private static final char DEFAULT_EERSTE_CHAR = 'A';
-    private static final char DEFAULT_TWEEDE_CHAR = 'A';
+    private static final char DEFAULT_EERSTE_LETTER = 'A';
+    private static final char DEFAULT_TWEEDE_LETTER = 'A';
     private static final char DEFAULT_CIJFER = 0;
 
-    private char eersteChar;
-    private char tweedeChar;
+    private char eersteLetter;
+    private char tweedeLetter;
     private int cijfer;
 
     public Kofferslot() {
     }
 
-    public Kofferslot(char eersteChar, char tweedeChar, int cijfer) {
+    public Kofferslot(char eersteLetter, char tweedeLetter, int cijfer) {
     }
 
     /**
      * Instellen slotcombinatie van Kofferslot
      *
-     * @param eersteChar
-     * @param tweedeChar
+     * @param eersteLetter
+     * @param tweedeLetter
      * @param cijfer
      */
 
-    public void setCombinatie(char eersteChar, char tweedeChar, int cijfer) {
+    public void setCombinatie(char eersteLetter, char tweedeLetter, int cijfer) {
     }
 
     public char volgendeLetter(char letter) {
@@ -43,20 +43,20 @@ public class Kofferslot {
     public void volgende() {
     }
 
-    public char getEersteChar() {
-        return eersteChar;
+    public char getEersteLetter() {
+        return eersteLetter;
     }
 
-    public void setEersteChar(char eersteChar) {
-        this.eersteChar = eersteChar;
+    public void setEersteLetter(char eersteLetter) {
+        this.eersteLetter = eersteLetter;
     }
 
-    public char getTweedeChar() {
-        return tweedeChar;
+    public char getTweedeLetter() {
+        return tweedeLetter;
     }
 
-    public void setTweedeChar(char tweedeChar) {
-        this.tweedeChar = tweedeChar;
+    public void setTweedeLetter(char tweedeLetter) {
+        this.tweedeLetter = tweedeLetter;
     }
 
     public int getCijfer() {
